@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Login e Senha
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-list>
+
+      <ion-item>
+        <ion-label floating>Login</ion-label>
+        <ion-input type="email" [(ngModel)]="usuario.cpf"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Senha</ion-label>
+        <ion-input type="password" [(ngModel)]="usuario.senha"></ion-input>
+      </ion-item>
+
+    </ion-list>
+
+    <div padding>
+      <button ion-button color="primary" block (click)="login()">Entrar</button>
+    </div>
+
+    <div padding>
+      <button ion-button color="primary"  block (click)="chamarCadastrarUsuario()">Cadastrar</button>
+    </div>
+
+</ion-content>
